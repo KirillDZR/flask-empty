@@ -19,3 +19,8 @@ def remove_session():
 
 #--- SQLALCHEMY SUPPORT END
 {% endif %}
+
+{%- if cookiecutter.use_nosql == 'yes' %}
+from extensions import nosql
+
+{% endif %}
